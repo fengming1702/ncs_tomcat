@@ -14,8 +14,8 @@ pipeline {
                 
                 echo "generating war file"
                dir("web-thymeleaf-war"){
-                    bat "mvn clean package"
-                }
+                   bat "mvn clean package"
+               }
             }
         }
         stage('Test') {
